@@ -28,17 +28,15 @@ public class BeerDto {
     private OffsetDateTime lastUpdatedDate;
     @NotBlank
     private String beerName;
-    @NotBlank
-    private String beerStyle;
+    @NotNull
+    private BeerStyleNum beerStyle;
     @Positive
     @NotNull
     private Long upc;
     @Positive
     @NotNull
     private BigDecimal price;
-    @Positive
-    @NotNull
+
     private  Integer minOnHand;
-    @Null
     private Integer quantityToBrew;
 }
